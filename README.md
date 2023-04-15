@@ -39,7 +39,7 @@ To set up IFJoystick on a Raspberry Pi Zero, you'll need to install the followin
 pip install evdev
 ```
 
-To make the python run as a service, you'll need to create a service file. Create a file called ifjoystick.service in /etc/systemd/system/ with the following contents:
+To make the python run as a service, you'll need to create a service file. Create a file called if-joystick.service in /etc/systemd/system/ with the following contents:
 ```
 [Unit]
 Description=if-joystick
