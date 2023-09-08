@@ -247,6 +247,8 @@ class InfiniteFlightAPIClient:
 					command_id = await self.get_command_id(axisPath)
 
 					if command_id is not None:  # Add this check
+						# show axis index and value
+						# print ("Axis found: {0} - {1}".format(axisIndex, value))
 						joystick_state = self.state_by_id[command_id]
 						await self.set_state(command_id, int(value * 1000))
 					else :

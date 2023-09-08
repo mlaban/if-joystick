@@ -17,7 +17,7 @@ async def main():
 		print("Please install evdev")
 		return
 
-	config_file_path = os.path.expanduser("/home/laura/config.json")
+	config_file_path = os.path.expanduser("./config.json")
 
 	# check if config file is present
 	if not os.path.isfile(config_file_path):
